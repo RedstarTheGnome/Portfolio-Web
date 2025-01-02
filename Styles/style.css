@@ -59,7 +59,7 @@ main {
 
 .card img {
     width: 100%; /* Ensures the image fits the card's width */
-    height: auto;
+    height: 300px;
 }
     
 
@@ -73,7 +73,10 @@ main {
     
   }
 
-
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
 
 
 
