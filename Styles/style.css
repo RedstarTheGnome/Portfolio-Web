@@ -1,5 +1,18 @@
 body{
-    background-image: linear-gradient(grey, black);
+    background-color: black;
+    color: white;
+}
+header{
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 10px;
+
+}
+header h1{
+    color:white;
+    text-align: right;
+    
 }
 
 nav{
@@ -20,6 +33,13 @@ nav ul li {
     margin: 0.25em;
     list-style: none; /*removes the bullet points form unordered list*/
     color:white;
+}
+main{
+    border-top: solid 0.3em black;
+    border-bottom: solid 0.3em black;
+    margin: 10px; /*adds margin space between elements */
+    border-radius: 1.0em;
+    background-color: cadetblue;
 }
 
 
@@ -67,25 +87,18 @@ nav ul li {
 
   
 }
-
-
-
-
-
-
-
 /*end of tablet viewport*/
 /* desktop view port */
 @media screen and (min-width: 960px){
 
-    header img{
+    header h1{
         width: auto;
-        height: 4.5em;
+        height: 0.5em;
     }
     nav {
-        float: right; /*this floats the nav element to the right side of the page*/
-        margin-top: -4.7em; /*this moves the nav element above where it would normally be*/
-        width: 60%;
+        float: left; /*this floats the nav element to the right side of the page*/
+        margin-top: 0.7em; /*this moves the nav element above where it would normally be*/
+        width: 100%;
     }
 
     nav ul li{
