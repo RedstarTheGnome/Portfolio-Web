@@ -1,3 +1,95 @@
 body{
     background-image: linear-gradient(grey, black);
 }
+
+nav{
+    border-radius: 1.0em;
+    font-weight: bold;
+    text-align: centre;
+}
+
+nav ul{
+    padding: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+nav ul li {
+    padding: 1em;
+    min-width: 12%;
+    margin: 0.25em;
+    list-style: none; /*removes the bullet points form unordered list*/
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*mobile media screen*/
+@media screen and (max-width: 639px) {
+    nav ul li {
+        border-radius: 1em;
+    }
+    .tablet{
+        display:none;
+    }
+
+    .desktop{
+        display: none;
+    }
+}
+/*end mobile media screen*/
+/*tablet viewport*/
+@media screen and (min-width: 640px){
+
+    nav ul li{
+        display: inline-block; /*this list items horizontally and allows them to stretch*/
+        border-radius: 1em;
+    }
+    /*.desktop{
+        display: none;
+    }*/
+
+  
+}
+
+
+
+
+
+
+
+/*end of tablet viewport*/
+/* desktop view port */
+@media screen and (min-width: 960px){
+
+    header img{
+        width: auto;
+        height: 4.5em;
+    }
+    nav {
+        float: right; /*this floats the nav element to the right side of the page*/
+        margin-top: -4.7em; /*this moves the nav element above where it would normally be*/
+        width: 60%;
+    }
+
+    nav ul li{
+        display: inline-block; /*this list items horizontally and allows them to stretch*/
+        border-radius: 1em;
+    }
+}
