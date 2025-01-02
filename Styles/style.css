@@ -19,6 +19,7 @@ nav{
     border-radius: 1.0em;
     font-weight: bold;
     text-align: centre;
+    border-bottom: 10px;
 }
 
 nav ul{
@@ -35,12 +36,32 @@ nav ul li {
     color:white;
 }
 main{
-    border-top: solid 0.3em black;
+    border-top: solid 1em black;
     border-bottom: solid 0.3em black;
+
     margin: 10px; /*adds margin space between elements */
+    position:relative;
     border-radius: 1.0em;
-    background-color: cadetblue;
+    /*background-color: cadetblue;*/
 }
+.card {
+    
+    transition: 0.3s;
+    width: 33%;
+    border-radius: 1px;
+    /*float: left;*/
+    display: inline-block;
+    position: relative;
+
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
 
 
 
