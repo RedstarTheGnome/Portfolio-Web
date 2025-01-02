@@ -15,45 +15,54 @@ header h1{
     
 }
 
-nav{
-    border-radius: 1.0em;
-    font-weight: bold;
-    text-align: centre;
-    border-bottom: 10px;
+nav {
+    text-align: center; /* Centers the navigation menu */
+    margin-bottom: 20px; /* Adds spacing below the nav menu */
 }
 
-nav ul{
+nav ul {
     padding: 0;
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
+    margin: 0;
+    display: inline-block; /* Ensures the nav items are centered */
 }
 
 nav ul li {
+    display: inline-block;
     padding: 1em;
-    min-width: 12%;
     margin: 0.25em;
-    list-style: none; /*removes the bullet points form unordered list*/
-    color:white;
+    list-style: none;
+    color: white;
 }
-main{
+main {
     border-top: solid 1em black;
     border-bottom: solid 0.3em black;
-
-    margin: 10px; /*adds margin space between elements */
-    position:relative;
+    margin: 10px;
+    position: relative;
     border-radius: 1.0em;
-    /*background-color: cadetblue;*/
+
+    /* Flexbox for centering horizontally */
+    display: flex;
+    justify-content: center; /* Centers cards horizontally */
+    flex-wrap: wrap; /* Allows cards to wrap to the next row */
+    gap: 16px; /* Adds spacing between the cards */
+    padding: 20px; /* Adds padding around the main content */
 }
+
 .card {
-    
     transition: 0.3s;
-    width: 33%;
+    width: 300px; /* Fixed width for uniform card size */
     border-radius: 1px;
-    /*float: left;*/
     display: inline-block;
     position: relative;
+    text-align: center; /* Centers text inside cards */
+}
 
-  }
+.card img {
+    width: 100%; /* Ensures the image fits the card's width */
+    height: auto;
+}
+    
+
   
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -61,6 +70,7 @@ main{
   
   .container {
     padding: 2px 16px;
+    
   }
 
 
